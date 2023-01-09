@@ -1,0 +1,22 @@
+package com.bridgelabz.arrayprogram;
+
+public class SecondLargestElement {
+	public static void main(String[] args) {
+		int largest =0;
+		int secondLargest = 0;
+	    
+		int [] arr = {3,5,8,9,45,64};
+		
+		for (int i = 0; i < arr.length;i++) {
+			
+			if(arr[i] > largest) {  
+			secondLargest = largest;
+			largest = arr[i]; 
+			}
+			else if (arr[i] > secondLargest) { 
+				secondLargest = arr[i];  
+				}
+			}
+		System.out.println("The second largest number is:" +secondLargest);
+	}
+}
